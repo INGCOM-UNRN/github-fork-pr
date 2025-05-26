@@ -21,15 +21,15 @@ para que puedan ser corregidas por el docente.
 ## Cómo hacer un _Fork_ (desde GitHub)
 Primero nos vamos a dirigir al repositorio que queramos copiar a nuestra cuenta. Una vez allí vamos a ir al botón que dice "Fork":
 
-![1-](https://github.com/user-attachments/assets/2284cc20-b30d-498e-a343-46bd0d8915e1)
+![1-](1.png)
 
 Esto nos redirige al apartado de creación del fork. Acá se nos explica brevemente en qué consiste y podemos cambiar el nombre, la descripción y el dueño del fork (puede ser más de uno). 
 
-![2-](https://github.com/user-attachments/assets/39aff03a-014f-4c3c-9a72-a81a8b191485)
+![2-](2.png)
 
 Con todo esto armado, podemos crear la copia y automáticamente GitHub nos va a llevar al nuevo repositorio.
 
-![3](https://github.com/user-attachments/assets/3f85a7d4-6286-4778-9a58-32f400c90c24)
+![3](3.png)
 
 ## Trabajando en el _Fork_ 
 
@@ -73,18 +73,18 @@ origin  https://github.com/usuario/nombre-repositorio-forkeado.git (push)
 
 ## Haciendo un Pull-Request
 Para hacer un Pull-Request tenemos que ir a la pestaña con el mismo nombre dentro de nuestro repositorio.
-![pr](https://github.com/user-attachments/assets/e51eb681-7b96-47e5-b39a-2106f5c697c6)
+![pr](4.png)
 Acá vamos a crear un nuevo Pull-Request
-![4-](https://github.com/user-attachments/assets/4adc37e2-b871-4806-ac16-685f8bf361a1)
+![4-](5.png)
 Después, clickeamos en _compare across forks_
-![5-](https://github.com/user-attachments/assets/8c35fdd5-71b9-4718-94a0-6be2abe4153f)
+![5-](6.png)
 Vamos a ver que nos salen las opciones _base repository_ _base: main_ y _head repository_ _compare: main:_
 - En la primera opción vamos a seleccionar el nombre del repositorio original
 - En _head repository_ seleccionamos el nombre de nuestro fork
 Debajo van a aparecer todos los commits que hicimos y el botón de "Create pull request"
-![6](https://github.com/user-attachments/assets/2896967b-73eb-447e-8caf-2a250dcc3a6b)
+![6](7.png)
 Creamos el Pull-Request y lo subimos.
-![7](https://github.com/user-attachments/assets/3fd51127-1744-40f8-9d69-ac69bcc9e8db)
+![7](8.png)
 
 Luego de todo eso, pueden cargar el repositorio en el formulario de entrega 
 (no olviden aclarar que la entrega es en un Pull request separado)
