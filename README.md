@@ -91,6 +91,67 @@ Luego de todo eso, pueden cargar el repositorio en el formulario de entrega
 
 Y listo, así de sencillo es hacer un Pull-Request en GitHub.
 
+## Sincronizando tu Fork con el repositorio original
+
+Es posible que el repositorio original reciba cambios después de que hiciste tu fork. Para mantener tu fork actualizado y evitar conflictos, es recomendable sincronizarlo periódicamente con el repositorio original. Aquí tienes los pasos para hacerlo:
+
+Aunque esto es raro en el contexto del uso que le damos a git y GitHub, es interesante tenerlo en cuenta ya que posibilita que utilicemos esta mecánica para sumar contribuciones a cualquier otro repositorio de la plataforma.
+
+1. **Agregar el repositorio original como remoto**
+   
+   Abre una terminal en la carpeta de tu fork y ejecuta:
+   ```bash
+   git remote add upstream https://github.com/OWNER_ORIGINAL/REPO_ORIGINAL.git
+
+Reemplaza OWNER_ORIGINAL y REPO_ORIGINAL por el usuario y nombre del repositorio original.
+
+Puedes verificar que se agregó correctamente con:
+
+```bash
+git remote -v
+```
+
+Deberías ver algo como:
+
+```Code
+origin    https://github.com/tu_usuario/tu_fork.git (fetch)
+origin    https://github.com/tu_usuario/tu_fork.git (push)
+upstream  https://github.com/OWNER_ORIGINAL/REPO_ORIGINAL.git (fetch)
+upstream  https://github.com/OWNER_ORIGINAL/REPO_ORIGINAL.git (push)
+```
+2. Traer los cambios del repositorio original
+
+    Ejecuta:
+```bash
+git fetch upstream
+```
+
+3. Fusionar los cambios en tu rama principal
+
+Cambia a tu rama principal (usualmente llamada main):
+
+```bash
+git checkout main
+```
+
+Fusiona los cambios del repositorio original:
+
+```bash
+git merge upstream/main
+```
+
+Si hay conflictos, Git te lo indicará y deberás resolverlos antes de continuar.
+
+Subir los cambios a tu fork en GitHub
+
+Finalmente, sube los cambios a tu fork:
+
+```bash
+git push origin main
+```
+    
+¡Listo! Así mantienes tu fork actualizado con el repositorio original. Se recomienda hacerlo antes de comenzar nuevas tareas o antes de crear un Pull Request.
+
 # Créditos
 
 @gonabur a quien armó la base de este apunte.
