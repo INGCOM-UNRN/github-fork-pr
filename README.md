@@ -91,6 +91,9 @@ Luego de todo eso, pueden cargar el repositorio en el formulario de entrega
 
 Y listo, así de sencillo es hacer un Pull-Request en GitHub.
 
+## Último paso
+Hacer la entrega con [el formulario](https://dub.sh/p2/entregas) con la dirección del repositorio en el que creamos el PR.
+
 ## Sincronizando tu Fork con el repositorio original
 
 Es posible que el repositorio original reciba cambios después de que hiciste tu fork. Para mantener tu fork actualizado y evitar conflictos, es recomendable sincronizarlo periódicamente con el repositorio original. Aquí tienes los pasos para hacerlo:
